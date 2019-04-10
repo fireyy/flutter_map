@@ -40,6 +40,10 @@ class MapControllerImpl implements MapController {
 
   LatLngBounds get bounds => _state.bounds;
 
+  LatLng layerPointToLatLng(CustomPoint point) {
+    return _state.layerPointToLatLng(point);
+  }
+
   double get zoom => _state.zoom;
 }
 
